@@ -6,8 +6,8 @@ import pickle
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 # Load the trained model and tokenizer
-loaded_model = pickle.load(open("C:/Users/KARTHIK M/Documents/College works/M.Sc Data Science/deep learning/holiday project/trainedmodel.sav", "rb"))
-tokenizer = pickle.load(open("C:/Users/KARTHIK M/Documents/College works/M.Sc Data Science/deep learning/holiday project/tokenizer.pkl", "rb"))  # Assuming tokenizer was saved as a pickle file
+loaded_model = pickle.load(open("trainedmodel.sav", "rb"))
+tokenizer = pickle.load(open("tokenizer.pkl", "rb"))  # Assuming tokenizer was saved as a pickle file
 #tokenizer = pickle.load('tokenizer.pkl')
 max_len = 100  # Update this to the max_len used in training
 
